@@ -1,0 +1,8 @@
+bind = yes
+bind_dn = uid=postfix,ou=services,${DC_DOMAIN}
+bind_pw = ${LDAP_POSTFIX_PASSWORD}
+server_host = ldap://127.0.0.1:389
+search_base = ou=people,${DC_DOMAIN}
+domain = ${DOMAIN_BASE}
+query_filter = (&(mail=%s)(mailEnabled=TRUE))
+result_attribute = mail
