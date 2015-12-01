@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+export FILE_MAIN="scripts/install.sh"
+export VERSION="0.2.0"
