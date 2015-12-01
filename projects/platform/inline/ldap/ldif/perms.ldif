@@ -1,0 +1,18 @@
+{0}to dn.subtree="${DC_DOMAIN}" attrs=userPassword
+    by self write
+    by dn.base="cn=admin,${DC_DOMAIN}" write
+    by dn.children="ou=services,${DC_DOMAIN}" read
+    by anonymous auth
+    by * none
+
+{1}to dn.subtree="${DC_DOMAIN}"
+    by self read
+    by dn.base="cn=admin,${DC_DOMAIN}" write
+    by dn.children="ou=services,${DC_DOMAIN}" read
+    by * none
+
+{1}to dn.subtree="${DC_DOMAIN}"
+    by self read
+    by dn.base="cn=admin,${DC_DOMAIN}" write
+    by dn.children="ou=services,${DC_DOMAIN}" read
+    by * none

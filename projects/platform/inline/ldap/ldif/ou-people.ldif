@@ -1,0 +1,5 @@
+dn: ou=people,${DC_DOMAIN}
+changetype: add
+objectClass: organizationalUnit
+objectClass: top
+ou: people

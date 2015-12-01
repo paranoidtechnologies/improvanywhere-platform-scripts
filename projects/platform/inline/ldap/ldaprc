@@ -1,0 +1,2 @@
+BASE    dc=${DOMAIN_NAME},dc=${DOMAIN_IDN}
+BINDDN  cn=admin,dc=${DOMAIN_NAME},dc=${DOMAIN_IDN}
